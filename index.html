@@ -1,0 +1,157 @@
+<!-- Bu satır, HTML belgesinin türünü belirtir. HTML5 standardını kullandığınızı belirtmek için kullanılır. Tarayıcılara belgenin HTML5 uyumlu olduğunu söyler. -->
+
+<!DOCTYPE html>
+
+<!-- Bu, HTML belgesinin başlangıcını belirtir. lang="en" özelliği, belgenin dilinin İngilizce olduğunu belirtir. Bu, arama motorları ve tarayıcılar için faydalıdır. -->
+
+<html lang="en">
+  <!-- Bu, belge başlığının başlangıcını belirtir. <head> etiketi içinde sayfa hakkında meta bilgiler, stil sayfaları, yazı tipleri, vb. gibi unsurlar tanımlanır. -->
+  <head>
+    <!-- Bu, belgenin karakter kodlamasını belirtir. UTF-8, geniş bir karakter setini destekleyen evrensel bir kodlamadır ve çoğu dil için uygundur. -->
+    <meta charset="UTF-8" />
+    <!-- Bu meta etiket, sayfanın mobil cihazlar gibi farklı ekran boyutlarına uygun şekilde görüntülenmesini sağlar. width=device-width, sayfanın genişliğinin cihazın ekran genişliğine ayarlanmasını sağlar. initial-scale=1.0, sayfanın varsayılan yakınlaştırma seviyesini belirtir. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML&CSS Cover</title>
+
+    <!-- css dosyasına html ile bağlarız -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 1) HTML nedir? Hyper Text Markup Language 
+HTML (HyperText Markup Language), web sayfalarının yapısını ve içeriğini tanımlamak için kullanılan bir işaretleme dilidir. 
+    <h1>Selam</h1>
+    <h2>Selam</h2>
+    <h3>Selam</h3>
+    <h4>Selam</h4>
+    <h5>Selam</h5>
+    <h6>Selam</h6> -->
+    <!-- header > üst alanı temsil eder -->
+    <!-- <div>Burası üst kısım</div> -->
+    <header>
+      <img width="60" height="60" src="images/eagles.png" alt="logo" />
+
+      <!-- nav > kullanıcıyı yönlendirme alanı -->
+      <nav>
+        <!-- yönlendirme etiketleri -->
+        <a href="https://udemig.com" target="_blank">Son Maçlar</a>
+        <a href="oyuncular.html" target="_blank">Kurucu</a>
+        <a href="oyuncular.html" target="_blank">Oyuncular</a>
+      </nav>
+    </header>
+
+    <!-- 2 <div>
+      <p>Burası bir paragraf alanı</p>
+      <p>
+        Burası bir paragraf alanı <br />
+        <br />
+        Burası 2.satır
+      </p>
+    </div>
+    <div>
+      <p>diğer paragraflar</p>
+      <p>paragraflar</p>
+    </div> -->
+
+    <!-- yan içerik -->
+    <aside>
+      <!-- liste elemanları classları yapma selin-->
+      <ul>
+        <li>En son oynanan maçlar</li>
+        <li class="top-li">ManCity vs Barc</li>
+        <li class="top-li">Gs vs ManCity</li>
+      </ul>
+      <!-- liste elemanları -->
+      <ol>
+        <li>En son oynanan maçlar</li>
+        <li>ManCity vs Barc</li>
+        <li>Gs vs ManCity</li>
+        <ul>
+          <li id="li-1">Gs vs ManCity 1-2</li>
+          <li id="li-2">Gs vs ManCity 2-1</li>
+        </ul>
+      </ol>
+    </aside>
+
+    <!-- table > tablo tanımlar -->
+    <table border="1" style="width: 100%">
+      <!-- tr > tablo satırı -->
+      <tr>
+        <!-- th > tablo başlığı -->
+        <th>id</th>
+        <th>isim</th>
+        <th>şirket</th>
+        <th>iletişim</th>
+        <th>country</th>
+      </tr>
+
+      <tr>
+        <!-- td > tablo hücresi -->
+        <td>1</td>
+        <td>Ali</td>
+        <td>Udemig</td>
+        <td>90-111-11-11</td>
+        <td>Tr</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Selin</td>
+        <td>Emaar</td>
+        <td>90-111-11-11</td>
+        <td>Us</td>
+      </tr>
+    </table>
+
+    <!-- block elements = bulunduğu satırın tamamını kaplıyor -->
+    <p style="background: red">Ali</p>
+    <div style="background: red">Ali</div>
+    <h1 style="background: red">Ali</h1>
+    <address style="border: 1px solid red">7777.sok, no:77, İstanbul</address>
+    <!-- form > header > footer > nav > ul > section > main > figure > .. -->
+
+    <!-- inline elements = bulunduğu alan kadar yer kaplıyor -->
+    <a href="/asd" style="border: 1px solid">Selam</a>
+    <b href="/asd" style="border: 1px solid">Selam</b>
+    <button>selam</button>
+    <code> DROP TABLE Musteriler </code>
+    <img src="images/eagles.png" width="20" />
+    <span>selam</span>
+    <small>küçük yazı</small>
+    <em>selam</em>
+    <i>italik</i>
+
+    <!-- birazdas css geç liste elamnlarına class tanımla -->
+
+    <!-- iframe etiketi farklı web sayfalarında içerikler almaya yarar  -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96375.89612668967!2d28.98277535820311!3d40.98702589999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac78eb24e62c3%3A0xf6aeec48ddd5df7c!2sMarmara%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1723578933116!5m2!1str!2str"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/eIFutTUHBwk?si=WZ_V8zvEAU5Skbni"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe src="https://udemig.com/" width="1000" height="500"> </iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/OP1TY69AG7A?si=IpqrkI2yjqoEyo8u&amp;start=11"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

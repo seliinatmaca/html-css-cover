@@ -1,0 +1,67 @@
+header {
+  padding: 20px;
+  background: rgba(94, 95, 86, 0.756);
+}
+
+/* belirli sınıfta ki elemanlar */
+.top-li {
+  color: red;
+}
+
+/* belirli id'de ki elemanı çağırmak için >> aynı id'ye sahip her zaman 1 eleman olabilir */
+
+#li-1 {
+  color: rgb(71, 187, 21);
+}
+
+#li-2 {
+  color: rgb(21, 32, 187);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 60px;
+  /* 
+  * border > çerçeve
+  * kalınlık
+  * türü
+  * renk
+  */
+  border: 3 px solid red;
+  border: 3px dotted red;
+  /* kesik çizgi */
+  border: 3px dashed red;
+  /* kabartmalı kenar */
+  border: 10px ridge red;
+  /* çöküntü etkili kenar */
+  border: 10px groove red;
+  /* çift çizgi */
+  border: 10px double red;
+  /* gömülü keanr */
+  border: 10px inset red;
+  /* yükseltilmiş kenar */
+  border: 10px outset red;
+  /* Bu kenarlık türleri, farklı görsel efektler yaratmak için kullanılır. Örneğin, solid düz bir çizgi verirken, dotted ve dashed daha farklı desenler sunar. ridge, groove, inset, ve outset gibi stil türleri ise 3D etkiler sağlar ve kenarlığı daha belirgin hale getirir. double ise iki paralel çizgiyle daha kalın bir kenarlık hissi verir. */
+}
+
+form input {
+  margin-bottom: 10px;
+}
+
+/* terms varya git id ver */
+
+#termss {
+  /* üst köşe */
+  border-top: 3px double green;
+
+  /* alt köşe */
+  border-bottom: 4px solid pink;
+
+  /* sağ köşe */
+  border-right: 2px ridge;
+
+  /* sol köşe */
+  border-left: 2px ridge;
+}
